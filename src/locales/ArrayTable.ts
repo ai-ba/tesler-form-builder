@@ -60,6 +60,7 @@ export const ArrayTableColumn = {
     settings: {
       "x-component-props": {
         title: "Заголовок",
+        titleTooltip: "Подсказка заголовка",
         align: {
           title: "Выровнять",
           dataSource: ["Слева", "Справа", "По центру"],
@@ -78,6 +79,7 @@ export const ArrayTableColumn = {
     settings: {
       "x-component-props": {
         title: "Title",
+        titleTooltip: "Title tooltip",
         align: {
           title: "Align",
           dataSource: ["Left", "Right", "Center"],

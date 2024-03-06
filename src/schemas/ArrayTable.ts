@@ -54,6 +54,11 @@ const Column: ISchema = {
       "x-decorator": "FormItem",
       "x-component": "Input",
     },
+    titleTooltip: {
+      type: "string",
+      "x-decorator": "FormItem",
+      "x-component": "Input",
+    },
     align: {
       type: "string",
       enum: ["left", "right", "center"],
