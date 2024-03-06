@@ -197,9 +197,9 @@ export const ArrayTable: DnFC<TableProps<any>> = observer((props) => {
                 title={
                   <div data-content-editable="x-component-props.title">{innerProps.title}</div>
                 }
-                dataIndex={node.id}
-                className={`data-id:${node.id}`}
-                key={node.id}
+                dataIndex={innerNode.id}
+                className={`data-id:${innerNode.id}`}
+                key={innerNode.id}
                 render={(value, record, key) => {
                   return (
                     <ArrayBase.Item
