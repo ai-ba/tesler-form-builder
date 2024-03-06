@@ -21,6 +21,7 @@ node_modules/
 jspm_packages/
 .yarn/cache
 .yarn/unplugged
+.yarn/install-state.gz
 
 # Distribution directories
 dist/
