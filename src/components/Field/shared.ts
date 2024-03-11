@@ -141,8 +141,7 @@ export const createFieldSchema = (
 
 export const createVoidFieldSchema = (
   component?: ISchema,
-  decorator: ISchema = AllSchemas.FormItem,
-  defaultValues?: ISchema
+  decorator: ISchema = AllSchemas.FormItem
 ) => {
   return {
     type: "object",
@@ -195,10 +194,7 @@ export const createVoidFieldSchema = (
             "x-decorator": "FormItem",
             "x-component": "Select",
             "x-component-props": {
-              defaultValue:
-                defaultValues?.properties?.["field-group"]?.properties?.["x-pattern"]?.[
-                  "x-component-props"
-                ]?.defaultValue || "editable",
+              defaultValue: "editable",
             },
           },
           "x-reactions": {

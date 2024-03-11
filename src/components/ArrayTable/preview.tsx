@@ -443,19 +443,7 @@ ArrayTable.Behavior = createBehavior(createArrayBehavior("ArrayTable"), {
     droppable: true,
     allowDrop: (node) =>
       node.props.type === "object" && node.parent?.props?.["x-component"] === "ArrayTable",
-    propsSchema: createVoidFieldSchema(AllSchemas.ArrayTable.Column, undefined, {
-      properties: {
-        "field-group": {
-          properties: {
-            "x-pattern": {
-              "x-component-props": {
-                defaultValue: "readPretty",
-              },
-            },
-          },
-        },
-      },
-    }),
+    propsSchema: createVoidFieldSchema(AllSchemas.ArrayTable.Column),
   },
   designerLocales: AllLocales.ArrayTableColumn,
 });
